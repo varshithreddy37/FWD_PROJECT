@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">Eventify</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#events">Events</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact" class="btn">Book Event</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Make Your Events Memorable</h1>
+            <p>We plan, manage and deliver unforgettable experiences.</p>
+            <a href="#events" class="btn">View Events</a>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <h2>Our Events</h2>
+        <div class="event-cards">
+            <div class="card">
+                <a href="birthday.html">
+                    <img src="images/birthday.jpg" alt="Birthday Functions">
+                    <div class="card-content">
+                        <h3>Birthday Functions</h3>
+                        <p>Fun-filled birthday celebrations for all ages.</p>
+                        <span class="btn-link">Explore & Book</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="marriage.html">
+                    <img src="images/MARRIAGE.png" alt="Marriage / Wedding Events">
+                    <div class="card-content">
+                        <h3>Marriage / Wedding</h3>
+                        <p>Beautifully crafted weddings with elegance and joy.</p>
+                        <span class="btn-link">Explore & Book</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="dhoti-saree.html">
+                    <img src="images/dhoti function.png" alt="Dhoti & Saree Functions">
+                    <div class="card-content">
+                        <h3>Dhoti & Saree Functions</h3>
+                        <p>Traditional ceremonies crafted with cultural grace.</p>
+                        <span class="btn-link">Explore & Book</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="haldi.html">
+                    <img src="images/haldi function.jpeg" alt="Haldi Ceremony">
+                    <div class="card-content">
+                        <h3>Haldi Ceremony</h3>
+                        <p>Vibrant and joyous pre-wedding celebrations.</p>
+                        <span class="btn-link">Explore & Book</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="college-events.html">
+                    <img src="images/corporate.jpg" alt="College Events">
+                    <div class="card-content">
+                        <h3>College Events</h3>
+                        <p>Exciting college fests, farewells, and cultural events.</p>
+                        <span class="btn-link">Explore & Book</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="party.html">
+                    <img src="images/party.jpg" alt="Parties">
+                    <div class="card-content">
+                        <h3>Parties</h3>
+                        <p>Unforgettable parties for any special occasion.</p>
+                        <span class="btn-link">Explore & Book</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="concert.html">
+                    <img src="images/CONCERT.jpg" alt="Concerts">
+                    <div class="card-content">
+                        <h3>Concerts</h3>
+                        <p>Epic live music and grand stage concert setups.</p>
+                        <span class="btn-link">Explore & Book</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="festive.html">
+                    <img src="images/hero.jpg" alt="Festive Cultural Events">
+                    <div class="card-content">
+                        <h3>Festive Cultural Events</h3>
+                        <p>Grand celebrations for festivals and cultural milestones.</p>
+                        <span class="btn-link">Explore & Book</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <a href="venue.html">Venue Booking</a>
+            <a href="catering.html">Catering</a>
+            <a href="decoration.html">Decoration</a>
+            <a href="photography.html">Photography</a>
+            <a href="sound.html">Sound & Lighting</a>
+        </div>
+    </section>
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="images/MARRIAGE.png" alt="Marriage">
+            <img src="images/birthday.jpg" alt="Birthday">
+            <img src="images/dhoti function.png" alt="Dhoti Function">
+            <img src="images/haldi function.jpeg" alt="Haldi">
+            <img src="images/party.jpg" alt="Party">
+            <img src="images/CONCERT.jpg" alt="Concert">
+            <img src="images/corporate.jpg" alt="Corporate">
+            <img src="images/wedding.jpg" alt="Wedding">
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Book Your Event</h2>
+        <form id="booking-form">
+            <!-- Step 1: Basic Info -->
+            <div id="booking-step-1" class="booking-step active">
+                <h3>Step 1: Event Details</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <select id="event-type" required>
+                    <option value="" disabled selected>Select Event Type</option>
+                    <option value="Birthday Functions">Birthday Functions</option>
+                    <option value="Marriage / Wedding Events">Marriage / Wedding Events</option>
+                    <option value="Dhoti & Saree Functions">Dhoti & Saree Functions</option>
+                    <option value="Haldi Ceremony">Haldi Ceremony</option>
+                    <option value="College Events">College Events</option>
+                    <option value="Parties">Parties</option>
+                    <option value="Concerts">Concerts</option>
+                    <option value="Festive Cultural Events">Festive Cultural Events</option>
+                </select>
+                <input type="number" id="guests" placeholder="Number of Guests" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <input type="date" id="date" required>
+                <textarea id="details" placeholder="Event Details"></textarea>
+                <button type="button" class="btn next-btn" onclick="nextStep(2)">Next Categories ➔</button>
+            </div>
+
+            <!-- Step 2: Services -->
+            <div id="booking-step-2" class="booking-step" style="display: none;">
+                <h3>Step 2: Select Services</h3>
+
+                <div class="service-category">
+                    <h4>Food Options</h4>
+                    <div class="service-cards-container">
+                        <div class="service-option-card" onclick="toggleSubCategory('biryani-sub', this)">
+                            <img src="images/food/biryani.jpg" alt="Biryani"
+                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                            <h5>Biryani</h5>
+                            <button type="button" class="card-btn toggle-btn">View Options</button>
+                        </div>
+                        <div class="service-option-card" onclick="toggleSubCategory('buffet-sub', this)">
+                            <img src="images/food/buffet.jpg" alt="Buffet"
+                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                            <h5>Buffet</h5>
+                            <button type="button" class="card-btn toggle-btn">View Options</button>
+                        </div>
+                        <div class="service-option-card" onclick="toggleSubCategory('desserts-sub', this)">
+                            <img src="images/food/desserts.jpg" alt="Desserts"
+                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                            <h5>Desserts</h5>
+                            <button type="button" class="card-btn toggle-btn">View Options</button>
+                        </div>
+                    </div>
+
+                    <!-- Biryani Sub-options -->
+                    <div id="biryani-sub" class="sub-options-container" style="display: none;">
+                        <h4>Biryani Options</h4>
+                        <div class="service-cards-container">
+                            <div class="service-option-card" data-category="food" data-value="Non-Veg Biryani"
+                                onclick="toggleSelection(this)">
+                                <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&q=80&w=400"
+                                    alt="Non-Veg Biryani"
+                                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                                <h5>Non-Veg Biryani</h5>
+                                <button type="button" class="card-btn">Select</button>
+                            </div>
+                            <div class="service-option-card" data-category="food" data-value="Veg Biryani"
+                                onclick="toggleSelection(this)">
+                                <img src="https://www.cookingcarnival.com/wp-content/uploads/2025/09/Vegetable-Dum-Biryani-5.jpg"
+                                    alt="Veg Biryani"
+                                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                                <h5>Veg Biryani</h5>
+                                <button type="button" class="card-btn">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Buffet Sub-options -->
+                    <div id="buffet-sub" class="sub-options-container" style="display: none;">
+                        <h4>Buffet Options</h4>
+                        <div class="service-cards-container">
+                            <div class="service-option-card" data-category="food" data-value="Starters"
+                                onclick="toggleSelection(this)">
+                                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=400"
+                                    alt="Starters"
+                                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                                <h5>Starters</h5>
+                                <button type="button" class="card-btn">Select</button>
+                            </div>
+                            <div class="service-option-card" data-category="food" data-value="Main Course"
+                                onclick="toggleSelection(this)">
+                                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=400"
+                                    alt="Main Course"
+                                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                                <h5>Main Course</h5>
+                                <button type="button" class="card-btn">Select</button>
+                            </div>
+                            <div class="service-option-card" data-category="food" data-value="Side Courses"
+                                onclick="toggleSelection(this)">
+                                <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=400"
+                                    alt="Side Courses"
+                                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                                <h5>Side Courses</h5>
+                                <button type="button" class="card-btn">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desserts Sub-options -->
+                    <div id="desserts-sub" class="sub-options-container" style="display: none;">
+                        <h4>Dessert Options</h4>
+                        <div class="service-cards-container">
+                            <div class="service-option-card" data-category="food" data-value="Ice Creams"
+                                onclick="toggleSelection(this)">
+                                <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&q=80&w=400"
+                                    alt="Ice Creams"
+                                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                                <h5>Ice Creams</h5>
+                                <button type="button" class="card-btn">Select</button>
+                            </div>
+                            <div class="service-option-card" data-category="food" data-value="Gulab Jamun"
+                                onclick="toggleSelection(this)">
+                                <img src="images/food/custom-gulab-jamun.jpg"
+                                    alt="Gulab Jamun"
+                                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                                <h5>Gulab Jamun</h5>
+                                <button type="button" class="card-btn">Select</button>
+                            </div>
+                            <div class="service-option-card" data-category="food" data-value="Fruit Salads"
+                                onclick="toggleSelection(this)">
+                                <img src="images/food/custom-fruit-salad.jpg"
+                                    alt="Fruit Salads"
+                                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                                <h5>Fruit Salads</h5>
+                                <button type="button" class="card-btn">Select</button>
+                            </div>
+                            <div class="service-option-card" data-category="food" data-value="Other Sweets"
+                                onclick="toggleSelection(this)">
+                                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=400"
+                                    alt="Other Sweets"
+                                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1414235077428-338988692286?auto=format&fit=crop&q=80&w=400';">
+                                <h5>Other Sweets</h5>
+                                <button type="button" class="card-btn">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h4>Decoration Options</h4>
+                    <div class="service-cards-container">
+                        <div class="service-option-card" data-category="decoration" data-value="Wedding Decor"
+                            onclick="toggleSelection(this)">
+                            <img src="images/decoration/wedding-decor.jpg" alt="Wedding Decor"
+                                onerror="this.src='images/placeholder.jpg'">
+                            <h5>Wedding Decor</h5>
+                            <button type="button" class="card-btn">Select</button>
+                        </div>
+                        <div class="service-option-card" data-category="decoration" data-value="Haldi Decor"
+                            onclick="toggleSelection(this)">
+                            <img src="images/decoration/haldi-decor.jpg" alt="Haldi Decor"
+                                onerror="this.src='images/placeholder.jpg'">
+                            <h5>Haldi Decor</h5>
+                            <button type="button" class="card-btn">Select</button>
+                        </div>
+                        <div class="service-option-card" data-category="decoration" data-value="Party Decor"
+                            onclick="toggleSelection(this)">
+                            <img src="images/decoration/party-decor.jpg" alt="Party Decor"
+                                onerror="this.src='images/placeholder.jpg'">
+                            <h5>Party Decor</h5>
+                            <button type="button" class="card-btn">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h4>Photography Options</h4>
+                    <div class="service-cards-container">
+                        <div class="service-option-card" data-category="photography" data-value="Wedding Photography"
+                            onclick="toggleSelection(this)">
+                            <img src="images/photography/wedding-photo.jpg" alt="Wedding Photography"
+                                onerror="this.src='images/placeholder.jpg'">
+                            <h5>Wedding Photography</h5>
+                            <button type="button" class="card-btn">Select</button>
+                        </div>
+                        <div class="service-option-card" data-category="photography" data-value="Event Photography"
+                            onclick="toggleSelection(this)">
+                            <img src="images/photography/event-photo.jpg" alt="Event Photography"
+                                onerror="this.src='images/placeholder.jpg'">
+                            <h5>Event Photography</h5>
+                            <button type="button" class="card-btn">Select</button>
+                        </div>
+                        <div class="service-option-card" data-category="photography" data-value="Candid Photography"
+                            onclick="toggleSelection(this)">
+                            <img src="images/photography/candid-photo.jpg" alt="Candid Photography"
+                                onerror="this.src='images/placeholder.jpg'">
+                            <h5>Candid Photography</h5>
+                            <button type="button" class="card-btn">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h4>Sound & Lighting Options</h4>
+                    <div class="service-cards-container">
+                        <div class="service-option-card" data-category="sound" data-value="DJ Setup"
+                            onclick="toggleSelection(this)">
+                            <img src="images/sound/dj.jpg" alt="DJ Setup" onerror="this.src='images/placeholder.jpg'">
+                            <h5>DJ Setup</h5>
+                            <button type="button" class="card-btn">Select</button>
+                        </div>
+                        <div class="service-option-card" data-category="sound" data-value="Stage Lighting"
+                            onclick="toggleSelection(this)">
+                            <img src="images/sound/stage-light.jpg" alt="Stage Lighting"
+                                onerror="this.src='images/placeholder.jpg'">
+                            <h5>Stage Lighting</h5>
+                            <button type="button" class="card-btn">Select</button>
+                        </div>
+                        <div class="service-option-card" data-category="sound" data-value="Concert Sound"
+                            onclick="toggleSelection(this)">
+                            <img src="images/sound/concert-sound.jpg" alt="Concert Sound"
+                                onerror="this.src='images/placeholder.jpg'">
+                            <h5>Concert Sound</h5>
+                            <button type="button" class="card-btn">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-buttons">
+                    <button type="button" class="btn" onclick="nextStep(1)">⬅ Back</button>
+                    <button type="button" class="btn" onclick="generateSummary(); nextStep(3);">Review Summary
+                        ➔</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Summary -->
+            <div id="booking-step-3" class="booking-step" style="display: none;">
+                <h3>Step 3: Booking Summary</h3>
+                <div id="booking-summary" class="summary-box">
+                    <!-- Summary content populated by JS -->
+                </div>
+                <div class="step-buttons">
+                    <button type="button" class="btn" onclick="nextStep(2)">⬅ Back</button>
+                    <button type="submit" class="btn">Confirm Booking ✔</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Eventify | Designed by Varshith</p>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

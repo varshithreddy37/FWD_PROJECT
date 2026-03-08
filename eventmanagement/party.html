@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parties - Eventify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Eventify</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#events">Events</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#gallery">Gallery</a>
+            <a href="index.html#contact" class="btn">Book Event</a>
+        </nav>
+    </header>
+
+    <section class="event-detail">
+        <div class="event-header">
+            <h1>Parties</h1>
+            <p>Host the perfect party with our complete event management solutions, from thematic decor to incredible entertainment.</p>
+            <a href="index.html#contact" class="btn" onclick="sessionStorage.setItem('selectedEvent','Parties')">Book This Event</a>
+        </div>
+        
+        <div class="event-gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid page-gallery">
+                <img src="images/party.jpg" alt="Party 1">
+                <img src="images/party.jpg" alt="Party 2">
+                <img src="images/party.jpg" alt="Party 3">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Eventify | Designed by Varshith</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
